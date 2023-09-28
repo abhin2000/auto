@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("https://www.cloudplusinfotech.com/assets/img/hero-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    background-color: #002357;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.glass-header {
+    background-color: #002358;
+    padding: 20px;
+    text-align: left;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Distribute items on both ends */
+    align-items: center; /* Vertically center items */
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    padding-left: 20px;
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+    padding-right: 20px;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.glass-card {
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    max-width: 800px;
+    width: 80%;
+    box-shadow: 0 4px 8px #002358;
+}
+
+.glass-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; /* Add space between image and text */
+}
+
+.bold-text {
+    font-weight: bold;
+    font-size: 32px;
+    color: #fff;
+    margin-left: 20px; /* Add space between image and text */
+}
+
+.right-image {
+    width: 300px;
+    height: auto;
+    margin-right: 20px;
+}
+.text-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.demo-button {
+    display: flex;
+    justify-content: center;
+    padding: 20px 20px;
+    background-color: #0099cc;
+    width: 200px;
+    color: #fff;
+    border: none;
+    border-radius: 20px; /* Increased border radius */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 15px; /* Increased margin for better spacing */
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added a subtle shadow */
+    transition: box-shadow 0.3s ease-in-out; /* Add transition effect */
+}
+
+.demo-button-wrapper {
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+
+.demo-button:hover {
+    box-shadow: 0 4px 15px rgba(0, 153, 204, 0.6); /* Enhanced glow effect on hover */
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.navbar-link:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Slight background color change on hover */
+    color: #0099cc;
+}
+
+/* Media Query for Mobile */
+@media screen and (max-width: 768px) {
+    .glass-content {
+        flex-direction: column; /* Stack content on mobile */
+    }
+
+    .right-image {
+        margin-right: 0; /* Remove margin on mobile */
+        margin-bottom: 20px; /* Add space between image and text on mobile */
+    }
+
+    .bold-text {
+        font-size: 34px;
+        margin-left: 0; 
+        width: 300px;
+        text-align: center;
+    }
+    .container {
+        overflow-y: scroll;
+    }
+
+    .demo-button-wrapper {
+       margin-bottom: 20px;
+    }
+}
