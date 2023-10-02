@@ -31,5 +31,5 @@ jobs:
           aws configure set default.region us-east-1 # Replace with your desired region
           # Deploy your code to EC2 using your preferred method (e.g., SCP, S3 Sync, etc.)
           # Example using SCP:
-          scp -r * ec2-user@54.161.244.24:/var/www/html
+          scp -r * ec2-user@18.206.251.94:/var/www/html
 
