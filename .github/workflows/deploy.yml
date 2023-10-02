@@ -31,5 +31,5 @@ jobs:
 
           # Deploy your code to EC2 using your preferred method (e.g., SCP, S3 Sync, etc.)
           # Example using SCP:
-          scp -r * ec2-user@35.170.202.193:/var/www/html
+          scp -r * ec2-user@54.161.244.24:/var/www/html
 
